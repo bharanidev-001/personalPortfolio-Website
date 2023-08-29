@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #0d0b10;
+  color: white;
+}
+
+/* NAVBAR */
+
+.nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: end;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 24px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+/* .menu-bar {
+  stroke: white;
+  width: 18px;
+} */
+/* HERO SECTION */
+
+.hero {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  justify-content: center;
+  align-content: center;
+}
+
+.about {
+  max-width: 70%;
+  padding-left: 10%;
+}
+
+.name {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.role {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn-contact {
+  background-color: white;
+  justify-self: center;
+  align-self: center;
+  padding: 8px 16px;
+}
+
+.contact-link {
+  text-decoration: none;
+  background-color: white;
+  color: #0d0b10;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-container {
+  margin: 50px 40px;
+}
+
+.illustration {
+  text-align: center;
+}
+/* SKILLS - SECTION */
+
+.container {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.heading {
+  color: #212529;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-size: 36px;
+  color: white;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0px;
+  color: #343a40;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.skills div {
+  text-align: center;
+}
+
+/* PROJECTS */
+
+.projects {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.projects div {
+  cursor: pointer;
+  height: fit-content;
+}
+
+.projects div img {
+  width: 100%;
+  height: 250px;
+}
+
+.project-description {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#svg {
+  width: 20px;
+  stroke: black;
+  fill: white;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: static;
+  }
+
+  .nav ul {
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 12px;
+  }
+
+  .about {
+    max-width: 100%;
+    padding: 10%;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 36px;
+    margin-bottom: 6px;
+  }
+
+  .role {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .hero img {
+    width: 300px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: max-content;
+    align-content: flex-start;
+  }
+
+  .contact-link {
+    font-size: 18px;
+  }
+
+  .heading {
+    margin-top: 50px;
+    margin-bottom: 20px !important;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects div img {
+    height: 200px;
+  }
+}
